@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todo-style.css">
+    <title>ToDo App</title>
+</head>
+<body>
+    <nav>
+        <div id="navbar">
+            <div>
+                <h1 style="color:white">To-Do List</h1>
+            </div>
+            <input type="text" id="search-activity" placeholder="  Search Todos here">
+            <select id="arrangement">
+                <option value="default">Select any option to sort</option>
+                <option value="alphabet">Sort alphabetically</option>
+            </select>
+        </div>
+    </nav>
+    <section>
+        <h1 style="color:white">Set your task to Complete and never Miss Again!!</h1>
+        <form id="manage-todo">
+            <input type="text" placeholder="  Enter task" name="todo">
+            <button id="add">Add Task</button>
+        </form>
+        <div><div id="todo-list"></div></div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"></script>
+    <script src="generate-uuid.js"></script>
+    <script src="todo.js"></script>
+</body>
+</html>

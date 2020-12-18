@@ -1,0 +1,143 @@
+:root {
+  --background-color: #e6e6e6;
+  --todolist-color: #fdb827;
+  --navbar-color: #79a3b1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("clock.jpg") no-repeat center center/cover;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  background-color: var(--navbar-color);
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+#search-activity {
+  border-radius: 5px;
+  height: 2rem;
+  width: 40rem;
+}
+
+#arrangement {
+  width: 5rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  text-align: center;
+  line-height: 1.8rem;
+}
+
+#manage-todo {
+  margin-top: 3rem;
+}
+
+#manage-todo input {
+  border: none;
+  height: 2rem;
+  border-radius: 3px;
+}
+
+#add {
+  margin-left: 1rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 3px;
+  color: blue;
+}
+
+#add:hover {
+  cursor: pointer;
+  background-color: var(--navbar-color);
+  color: white;
+}
+
+section div {
+  margin: 1rem 0;
+  background-color: var(--todolist-color);
+  width: 25rem;
+  border-radius: 5px;
+}
+
+#todo-list {
+  width: 50%;
+  margin-left: 25%;
+}
+
+#todo-list div {
+  width: 100%;
+  text-align: left;
+}
+#todo-list div a {
+  padding: 0 3rem 0 0.5rem;
+}
+
+.delete {
+  margin-left: 0.5rem;
+  width: 1.3rem;
+  color: white;
+  background-color: red;
+}
+
+@media (max-width: 361px) {
+  h1 {
+    font-size: 16px;
+  }
+
+  #search-activity {
+    width: 13rem;
+  }
+  #arrangement {
+    width: 1.3rem;
+    height: 1rem;
+  }
+
+  #manage-todo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  #add {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    width: 5rem;
+  }
+  section div {
+    width: 80%;
+  }
+
+  #todo-list {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #todo-list div {
+    width: 80%;
+    margin-left: 15%;
+    text-align: left;
+  }
+  /* #todo-list div a {
+    /* padding: 0 3rem 0 0.5rem; */
+  } */
+}
